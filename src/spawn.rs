@@ -98,7 +98,7 @@ mod tokio_impl {
         /// The global executor.
         Global,
         /// A handle to a specific executor.
-        Handle(&'a tokio::runtime::Runtime),
+        Handle(&'a tokio::runtime::Handle),
     }
 
     impl<'a> Default for Tokio<'a> {
